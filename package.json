@@ -19,7 +19,8 @@
     "lint:md": "remark . --quiet --output",
     "prettier": "prettier -c --write \"**/*.{json,ts,md}\"",
     "submit": "bun scripts/autoSubmit.ts",
-    "test": "bun scripts/test.ts"
+    "test": "bun scripts/test.ts",
+    "dev": "http-server public -p $PORT -c-1 -a index.json"
   },
   "devDependencies": {
     "@lobehub/lint": "latest",
@@ -41,5 +42,8 @@
     "typescript": "^5",
     "zod": "^3",
     "zod-to-json-schema": "^3.21.4"
+  },
+  "dependencies": {
+    "http-server": "^14.0.0"
   }
 }
