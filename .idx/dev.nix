@@ -23,7 +23,7 @@
       previews = {
         web = {
           # Comando para rodar o servidor web
-          command = [ "bun" "run" "dev" ];
+          command = [ "bun" "run" "build" ];
           manager = "web";
           env = {
             # Variáveis de ambiente para o servidor
@@ -41,7 +41,7 @@
       };
       # Executado quando o workspace é iniciado
       onStart = {
-        command = "bun run dev";
+        command = "bun run build";
       };
     };
   };

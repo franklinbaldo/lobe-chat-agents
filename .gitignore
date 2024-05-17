@@ -1,6 +1,7 @@
 # Gitignore for LobeHub
 ################################################################
-
+.trash
+README.zh-CN.md
 # general
 .DS_Store
 .idea
