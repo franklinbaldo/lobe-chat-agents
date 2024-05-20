@@ -5,6 +5,7 @@
   # Pacotes necessários
   packages = [
     pkgs.bun
+    pkgs.nodePackages.http-server # Usar nodePackages.http-server
   ];
 
   # Variáveis de ambiente no workspace
@@ -23,7 +24,7 @@
       previews = {
         web = {
           # Comando para rodar o servidor web
-          command = [ "bun" "run" "build" ];
+          command = [ "http-server" "public" "-p" "$PORT" ];
           manager = "web";
           env = {
             # Variáveis de ambiente para o servidor
